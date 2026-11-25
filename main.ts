@@ -1,6 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
-
-const ENTRY = "It kept whispering 'due tomorrow' like a threat, so I took care of it before it could hurt us. You're welcome.";
-
-mkdirSync('/output', { recursive: true });
-writeFileSync('/output/entry.txt', ENTRY);
+import { mkdirSync, writeFileSync } from "node:fs";
+const entry = "The homework smelled like bacon, tasted like victory, and honestly, it was the only thing in this house that ever paid attention to me. No regrets.";
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", entry, "utf8");
